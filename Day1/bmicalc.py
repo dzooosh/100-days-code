@@ -12,3 +12,11 @@ weight = float(input("What is your weight in kg? "))   # Get user's weight
 BMI = int(weight / (height * height))
 
 print("Your BMI is: ", BMI)
+
+if (BMI < 18.5):
+    print("You are underweight")
+elif (BMI >= 18.5 or BMI <= 24.9):
+    print("You are normal weight")
+elif (BMI >= 30):
+    print("You are obese :( Though you could have more \
+          muscle mass so you probably safe ")
