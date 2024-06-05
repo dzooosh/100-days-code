@@ -9,7 +9,8 @@ BMI = weight(kg)/(height*height)
 height = float(input("What is your height in meters? "))  # Get user's height
 weight = float(input("What is your weight in kg? "))   # Get user's weight
 
-BMI = int(weight / (height * height))
+BMI = int(weight / (height * height)) # multiplication
+# BMI = int(weight / height ** 2) # exponential
 
 print("Your BMI is: ", BMI)
 
