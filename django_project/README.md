@@ -21,3 +21,10 @@ Tags -> { % if has_title % }
 
 Filters -> {{ blog_title|title }}
 
+### Movies app
+
+Display your favorite movies
+
+#### Template format for any app
+> app/templates/app/{function_name}.html
+
