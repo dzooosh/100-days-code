@@ -1,6 +1,21 @@
-# 100 Days Code
 
-> `I will be working with python for the next 100 days. Refreshing my knowledge on python while doing projects alongside.`
+> Dealing with the fundamentals
 
-## DAY 1
+## Print, Input, Variable
 
+[debnprnt](debnprnt.py) - printing and debugging some simple codes
+
+[Inpt](inpt.py) - quick way to take inputs and work on them
+
+[interchangvar](interchangvar.py) - ways to interchange those variables
+
+## BMI Calculator
+
+[bmicalc](bmicalc.py) - a program that calculates the simple Body Mass Index (BMI) from a user's weight and height
+
+Main and Square
+Making use of shapes to understand implementation of OOP
+
+Working with Django
+
+Building an AirBnB clone

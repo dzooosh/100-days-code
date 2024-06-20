@@ -28,3 +28,14 @@ Display your favorite movies
 #### Template format for any app
 > app/templates/app/{function_name}.html
 
+Migrations:
+
+    Django’s migration system tracks changes to your models and applies them to your database. You can create and apply migrations with simple commands.
+
+Admin Interface:
+
+    The Django admin interface is automatically generated from your models, providing a ready-made interface for managing your application’s data.
+
+Middlewares:
+
+    Middleware in Django is a way to process requests globally before they reach the view or after the view has processed them. You can create custom middleware to handle various tasks.

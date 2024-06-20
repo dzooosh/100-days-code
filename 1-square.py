@@ -11,7 +11,8 @@ class Square:
         """initialize the class
 
         Args:
-         Returns:
+            size (int, optional): _description_. Defaults to 0.
+        Returns:
             None
         """
         if not isinstance(size, int):
