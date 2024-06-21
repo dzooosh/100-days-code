@@ -39,3 +39,9 @@ Admin Interface:
 Middlewares:
 
     Middleware in Django is a way to process requests globally before they reach the view or after the view has processed them. You can create custom middleware to handle various tasks.
+
+Using Django for API Development
+
+ Install Django and Django REST Framework
+`pip install django djangorestframework`
+
