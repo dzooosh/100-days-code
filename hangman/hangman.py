@@ -68,4 +68,10 @@ words = ('ant baboon badger bat bear beaver camel cat clam cobra cougar '
          'rhino salmon seal shark sheep skunk sloth snake spider '
          'stork swan tiger toad trout turkey turtle weasel whale wolf '
          'wombat zebra ').split()
- 
+
+  """
+  Todo
+    Make dashes based on the number of letters present in the RANDOM word
+    Loop continuously till all life is lost or the word is answered correctly
+    For any right word replace dash with the letters
+  """
