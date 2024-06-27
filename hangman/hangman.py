@@ -1,5 +1,6 @@
 #!usr/bin/python3
 
+import random
 """ 
 HANGMAN PROJECT
 
@@ -75,3 +76,11 @@ words = ('ant baboon badger bat bear beaver camel cat clam cobra cougar '
     Loop continuously till all life is lost or the word is answered correctly
     For any right word replace dash with the letters
   """
+# Randomly picking a word in the word list for guessing
+
+random_word = random.choice(words)
+
+for letters in random_word:
+  print("_", end=" ")
+
+# if a letter from input is correct replace each _ with the letter
