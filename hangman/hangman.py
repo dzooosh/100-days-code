@@ -70,17 +70,31 @@ words = ('ant baboon badger bat bear beaver camel cat clam cobra cougar '
          'stork swan tiger toad trout turkey turtle weasel whale wolf '
          'wombat zebra ').split()
 
-  """
+"""
+
   Todo
     Make dashes based on the number of letters present in the RANDOM word
     Loop continuously till all life is lost or the word is answered correctly
     For any right word replace dash with the letters
-  """
-# Randomly picking a word in the word list for guessing
+"""
 
+# Generate a random word
 random_word = random.choice(words)
+print(random_word)
 
+# Generate as many blanks as letters in word
 for letters in random_word:
   print("_", end=" ")
+print("\n")
 
-# if a letter from input is correct replace each _ with the letter
+# Ask the user to guess a letter
+guess = input("Guess a letter ?").lower()
+
+# if letter guess in random_word fill the blanks
+# else lost one life
+for letters in random_word:
+  if guess == letters:
+    print(f"{guess}", end=" ")
+  else:
+    print("_", end=" ")
+print("\n")
