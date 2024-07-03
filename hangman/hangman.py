@@ -80,9 +80,13 @@ words = ('ant baboon badger bat bear beaver camel cat clam cobra cougar '
 
 # Generate a random word
 random_word = random.choice(words)
-print(random_word)
+print(f'Word picked: {random_word}')
 
 # Generate as many blanks as letters in word
+# put random word in a list
+display = random_word.split()
+
+print(display)
 for letters in random_word:
   print("_", end=" ")
 print("\n")
