@@ -84,21 +84,31 @@ print(f'Word picked: {random_word}')
 
 # Generate as many blanks as letters in word
 # put random word in a list
-display = random_word.split()
+# initial list contains the words length in dashes e.g hawk ['_', '_', '_', '_']
+# keep trying until the answer is right 
+display = []
+# create another list with the right word in a list
+# e.g hawk ['h', 'a', 'w', 'k']
+word = []
+for letter in random_word:
+  word.append(letter)
 
-print(display)
-for letters in random_word:
-  print("_", end=" ")
-print("\n")
+for _ in range(len(random_word)):
+    display += "_"
 
-# Ask the user to guess a letter
-guess = input("Guess a letter ?").lower()
+# continue to loop till answer is right
+word_length = len(random_word)
 
-# if letter guess in random_word fill the blanks
-# else lost one life
-for letters in random_word:
-  if guess == letters:
-    print(f"{guess}", end=" ")
-  else:
-    print("_", end=" ")
-print("\n")
+while (display != word):
+  # Ask the user to guess a letter
+  guess = input("Guess a letter ?").lower()
+
+  # if letter guess in random_word fill the blanks
+  # else lost one life
+
+  for position in range(word_length):
+    letter = random_word[position]
+    if guess == letter:
+      display[position] = letter
+
+  print(display)
