@@ -90,15 +90,15 @@ display = []
 # create another list with the right word in a list
 # e.g hawk ['h', 'a', 'w', 'k']
 word = []
-for letter in random_word:
-  word.append(letter)
 
-for _ in range(len(random_word)):
-    display += "_"
+for letter in range(len(random_word)):
+  word.append(letter)
+  display += "_"
 
 # continue to loop till answer is right
 word_length = len(random_word)
 
+# creating number of lives (6) for trial - after the 6 its game over
 while (display != word):
   # Ask the user to guess a letter
   guess = input("Guess a letter ?").lower()
