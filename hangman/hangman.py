@@ -16,7 +16,7 @@ from hangmanpics import HANGMANPICS
 
 # Pick a random word
 random_word = random.choice(words)
-print(f'Word picked: {random_word}')
+# print(f'Word picked: {random_word}')
 
 # Generate as many blanks as letters in word
 # initial list contains the words length in dashes e.g hawk ['_', '_', '_', '_']
@@ -41,6 +41,7 @@ word_length = len(random_word)
 # creating number of lives (6) for trial - after the 6 its game over
 while (display != word):
   # Ask the user to guess a letter
+  print(display)
   print(HANGMANPICS[LIFE])
   guess = input("Guess a letter(a - z)?").lower()
 
@@ -55,16 +56,19 @@ while (display != word):
   if guess not in display:
     # adding because of the list sequence
     LIFE += 1
+  else:
+    print(f"You already guessed {guess}")
 
   # check if you've used up the 6 guesses
-  print(LIFE)
+  # print(LIFE)
 
   if LIFE == 6:
     break
   
   print(display)
 
+print(HANGMANPICS[LIFE])
 if display != word:
-  print("You Died")
+  print(f"You Died. The answer is {random_word}")
 else:
   print("You Win")
