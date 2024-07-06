@@ -1,5 +1,10 @@
 # HANGMAN PROJECT
 
+> To run the program: ./hangman.py
+
+./hangman.py works on terminal because it is an executable file
+
+
 Things to Learn
 
 - Conditional Statements: IF / ELSE
@@ -8,5 +13,5 @@ Things to Learn
 - Lists
 - Strings
 - User Input
-- Error Handling (In case of unwanted inputs like numbers)
-- Modules
+- Modules (random)
+
