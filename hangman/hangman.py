@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 
 import random
 """ 
@@ -105,7 +105,7 @@ word_length = len(random_word)
 while (display != word):
   print(HANGMANPICS[LIFE])
   # Ask the user to guess a letter
-  guess = input("Guess a letter ?").lower()
+  guess = input("Guess a letter(a - z)?").lower()
 
   # if letter guess in random_word fill the blanks
   # else lose a life
