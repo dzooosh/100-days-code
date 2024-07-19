@@ -44,4 +44,5 @@ while continue_with_total == True:
         n2 = int(input("Enter num"))
     else:
         continue_with_total = False
+        print(f"The total is {result}")
         print("Thank you for using the calculator")
