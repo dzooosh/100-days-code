@@ -25,9 +25,9 @@ operators = {
 }
 
 # Get user input
-opt = input("Enter the operators '+', '-', '*', '/' ")
-n1 = int(input("Enter the first num"))
-n2 = int(input("Enter the second num"))
+opt = input("Enter the operators '+', '-', '*', '/': ")
+n1 = int(input("Enter the first num: "))
+n2 = int(input("Enter the second num: "))
 
 # use while loop to continue
 continue_with_total = True
@@ -37,12 +37,15 @@ while continue_with_total == True:
     result = operators[opt](n1, n2)
     print(f"{n1} {opt} {n2} = {result}")
     # Ask to continue or not
-    check = input("Do you want to continue? Type 'y' or 'n'")
+    check = input("Do you want to continue? Type 'y' or 'n'? ")
+    
     if check == "y":
-        opt = input("Enter the operators '+', '-', '*', '/' ")
+        opt = input("Enter the operators '+', '-', '*', '/': ")
         n1 = result
-        n2 = int(input("Enter num"))
-    else:
+        n2 = int(input("Enter number: "))
+    elif check == "n":
         continue_with_total = False
         print(f"The total is {result}")
         print("Thank you for using the calculator")
+    else: # if user inputs anything else except 'y' and 'n'
+        print("Invalid input")
